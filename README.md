@@ -1,6 +1,6 @@
 # 📖 SELAH | The Deep Insight Bible
 
-**Website Link:** [https://stephen-semense.github.io/Selah-Bible/](https://stephen-semense.github.io/Selah-Bible/)
+**Website Link:** [https://stephen-semense.github.io/Selah-Bible-App/](https://stephen-semense.github.io/Selah-Bible-App/)
 
 **Selah** [סֶלָה] is a modern, distraction-free Bible experience designed for deep meditation and structured study. Beyond just reading, Selah now incorporates a **structured insight engine** that breaks down verses into historical, linguistic, and spiritual components—helping you not just read the Word, but master it.
 
