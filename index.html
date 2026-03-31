@@ -75,6 +75,50 @@
         </div>
     </div>
 
+    <!-- Superbook Episode Modal -->
+    <div id="superbookModal" class="superbook-modal" onclick="closeSuperbookModal(event)">
+        <div class="superbook-modal-content" onclick="event.stopPropagation()">
+            <div class="superbook-modal-header">
+                <button class="superbook-modal-close" onclick="closeSuperbookModal()" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex items-center gap-3 mb-2">
+                    <span id="superbookModalNumber" class="text-4xl font-bold text-yellow-400"></span>
+                    <div>
+                        <span id="superbookModalSeason" class="text-xs font-bold uppercase tracking-wider text-yellow-400/80 bg-yellow-400/10 px-2 py-1 rounded-full"></span>
+                    </div>
+                </div>
+                <h2 id="superbookModalTitle" class="text-2xl font-bold text-white display-font"></h2>
+                <p id="superbookModalBible" class="text-indigo-300 mt-1 text-sm"></p>
+            </div>
+            <div class="superbook-modal-body">
+                <div class="aspect-video bg-black/30 rounded-xl mb-4 flex items-center justify-center overflow-hidden relative">
+                    <img id="superbookModalImage" src="" alt="" class="absolute inset-0 w-full h-full object-cover opacity-50">
+                    <div class="relative z-10 text-center p-4">
+                        <i class="fas fa-play-circle text-6xl text-white/80 mb-2"></i>
+                        <p class="text-white/60 text-sm" id="superbookModalHelper">Click below to watch on YouTube</p>
+                    </div>
+                </div>
+                <p id="superbookModalDescription" class="text-slate-300 leading-relaxed mb-4"></p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-white/10 rounded-full text-xs text-white/80">
+                        <i class="fas fa-clock mr-1"></i> ~22 min
+                    </span>
+                    <span class="px-3 py-1 bg-white/10 rounded-full text-xs text-white/80">
+                        <i class="fas fa-film mr-1"></i> Animation
+                    </span>
+                    <span class="px-3 py-1 bg-white/10 rounded-full text-xs text-white/80">
+                        <i class="fas fa-child mr-1"></i> Kids & Family
+                    </span>
+                </div>
+                <a id="superbookWatchBtn" href="#" target="_blank" rel="noopener noreferrer" class="superbook-watch-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    Watch Episode on Superbook
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 glass-card border-b border-slate-200/50 dark:border-slate-800/50 px-4 py-3 sm:px-6 sm:py-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
@@ -88,6 +132,9 @@
             </div>
             
             <div class="flex items-center gap-2 sm:gap-3">
+                <button onclick="showSuperbookSection()" class="p-2.5 hover:bg-yellow-500/20 rounded-lg sm:rounded-xl transition-colors group" title="Superbook Episodes" aria-label="Superbook">
+                    <i class="fas fa-tv text-yellow-600 group-hover:text-yellow-500 text-sm sm:text-base"></i>
+                </button>
                 <button onclick="resetToLibrary()" class="p-2.5 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg sm:rounded-xl transition-colors" title="Home" aria-label="Home">
                     <i class="fas fa-house text-slate-500 dark:text-slate-400 text-sm sm:text-base"></i>
                 </button>
@@ -148,6 +195,20 @@
                     <div id="historyGrid" class="flex gap-2 sm:gap-4 overflow-x-auto pb-3 sm:pb-4 custom-scrollbar snap-x"></div>
                 </div>
 
+                <!-- Superbook Section -->
+                <div class="superbook-divider">
+                    <span class="superbook-divider-title">
+                        <i class="fas fa-tv"></i> Superbook Episodes
+                    </span>
+                </div>
+                <div class="mb-4 flex items-center justify-between">
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Watch all 68 animated Bible stories</p>
+                    <button onclick="showSuperbookSection()" class="text-xs font-bold text-yellow-600 hover:text-yellow-500 transition-colors flex items-center gap-1">
+                        View All <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div id="superbookPreview" class="superbook-grid mb-8 sm:mb-12"></div>
+
                 <!-- Old Testament Section -->
                 <div class="testament-divider">
                     <span class="testament-title">Old Testament</span>
@@ -168,6 +229,33 @@
                     </button>
                     <p class="text-[10px] text-slate-300 mt-2">© 2026 Selah Bible. All rights reserved.</p>
                 </div>
+            </div>
+
+            <!-- Superbook Full Section -->
+            <div id="superbookView" class="hidden">
+                <div class="flex items-center gap-3 mb-6">
+                    <button onclick="resetToLibrary()" class="p-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-lg transition-colors">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold display-font flex items-center gap-2">
+                            <i class="fas fa-tv text-yellow-500"></i> Superbook
+                        </h2>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm">All 68 Episodes - Animated Bible Stories</p>
+                    </div>
+                </div>
+
+                <!-- Season Tabs -->
+                <div class="superbook-tabs custom-scrollbar">
+                    <button class="superbook-tab active" onclick="filterSuperbookSeason('all')">All Episodes</button>
+                    <button class="superbook-tab" onclick="filterSuperbookSeason(1)">Season 1</button>
+                    <button class="superbook-tab" onclick="filterSuperbookSeason(2)">Season 2</button>
+                    <button class="superbook-tab" onclick="filterSuperbookSeason(3)">Season 3</button>
+                    <button class="superbook-tab" onclick="filterSuperbookSeason(4)">Season 4</button>
+                    <button class="superbook-tab" onclick="filterSuperbookSeason(5)">Season 5</button>
+                </div>
+
+                <div id="superbookFullGrid" class="superbook-grid pb-12"></div>
             </div>
 
             <!-- Selection View -->
