@@ -147,6 +147,636 @@ const BOOK_COVERS = {
 
 const ALL_BOOKS = [...BIBLE_BOOKS.OT, ...BIBLE_BOOKS.NT];
 
+// Superbook Episodes Data (All 68 Episodes)
+const SUPERBOOK_EPISODES = [
+  // Season 1 (2011-2013) - 13 Episodes
+  {
+    episode: 1,
+    season: 1,
+    title: "In The Beginning",
+    bible: "Genesis 1-3",
+    description:
+      "Chris, Joy and Gizmo see Lucifer rebel in heaven, then tempt Eve in Eden.",
+  },
+  {
+    episode: 2,
+    season: 1,
+    title: "The Test!",
+    bible: "Genesis 22",
+    description:
+      "Chris is stumped about how to pray for a sick friend. Superbook takes the kids to meet Abraham and Isaac.",
+  },
+  {
+    episode: 3,
+    season: 1,
+    title: "Jacob and Esau",
+    bible: "Genesis 25-27",
+    description:
+      "Chris must choose between playing soccer or attending his father's important awards dinner.",
+  },
+  {
+    episode: 4,
+    season: 1,
+    title: "Let My People Go!",
+    bible: "Exodus 3-12",
+    description:
+      "Chris and Joy are whiners! So Superbook takes them back to meet Moses.",
+  },
+  {
+    episode: 5,
+    season: 1,
+    title: "The Ten Commandments",
+    bible: "Exodus 19-20",
+    description:
+      "Chris is tempted to play a violent video game that his parents forbid.",
+  },
+  {
+    episode: 6,
+    season: 1,
+    title: "A Giant Adventure!",
+    bible: "1 Samuel 17",
+    description:
+      "Chris is too small to play basketball. Superbook takes him to meet David.",
+  },
+  {
+    episode: 7,
+    season: 1,
+    title: "Roar!",
+    bible: "Daniel 6",
+    description:
+      "Chris is afraid to tell a boy that his 'magic' tricks are lame.",
+  },
+  {
+    episode: 8,
+    season: 1,
+    title: "The First Christmas",
+    bible: "Luke 1-2",
+    description:
+      "Chris has lost the Christmas joy. Superbook takes him back to the first Christmas.",
+  },
+  {
+    episode: 9,
+    season: 1,
+    title: "Miracles of Jesus",
+    bible: "Matthew 8-9",
+    description:
+      "Chris is desperate to be 'the best.' Superbook takes him to see Jesus perform miracles.",
+  },
+  {
+    episode: 10,
+    season: 1,
+    title: "The Last Supper",
+    bible: "Matthew 26",
+    description:
+      "Chris is too busy to help a homeless man. Superbook takes him to the Last Supper.",
+  },
+  {
+    episode: 11,
+    season: 1,
+    title: "He Is Risen!",
+    bible: "Matthew 27-28",
+    description:
+      "Chris has lost his dog. Superbook takes him to see the greatest sacrifice ever made.",
+  },
+  {
+    episode: 12,
+    season: 1,
+    title: "The Road to Damascus",
+    bible: "Acts 9",
+    description:
+      "Chris is persecuted for being a Christian. Superbook takes him to meet Saul.",
+  },
+  {
+    episode: 13,
+    season: 1,
+    title: "Revelation: The Final Battle!",
+    bible: "Revelation 19-22",
+    description:
+      "Chris is afraid of the end times. Superbook takes him to see the final battle.",
+  },
+
+  // Season 2 (2013-2014) - 13 Episodes
+  {
+    episode: 14,
+    season: 2,
+    title: "Job",
+    bible: "Job 1-42",
+    description:
+      "Chris is devastated when his family's home is destroyed by a fire.",
+  },
+  {
+    episode: 15,
+    season: 2,
+    title: "John the Baptist",
+    bible: "Luke 1, 3",
+    description: "Chris is confused about who Jesus really is.",
+  },
+  {
+    episode: 16,
+    season: 2,
+    title: "Paul and the Shipwreck",
+    bible: "Acts 27-28",
+    description:
+      "Chris is afraid to share his faith. Superbook takes him to meet Paul.",
+  },
+  {
+    episode: 17,
+    season: 2,
+    title: "Joseph and Pharaoh's Dream",
+    bible: "Genesis 37, 39-45",
+    description:
+      "Chris is betrayed by his best friend. Superbook takes him to meet Joseph.",
+  },
+  {
+    episode: 18,
+    season: 2,
+    title: "The Fiery Furnace!",
+    bible: "Daniel 3",
+    description:
+      "Chris is pressured to compromise his faith. Superbook takes him to meet Shadrach, Meshach and Abednego.",
+  },
+  {
+    episode: 19,
+    season: 2,
+    title: "Rahab and the Walls of Jericho",
+    bible: "Joshua 2, 6",
+    description:
+      "Chris is afraid to stand up for what's right. Superbook takes him to meet Rahab.",
+  },
+  {
+    episode: 20,
+    season: 2,
+    title: "Esther—For Such a Time as This",
+    bible: "Esther 1-10",
+    description: "Chris is afraid to speak up for a girl being bullied.",
+  },
+  {
+    episode: 21,
+    season: 2,
+    title: "John the Baptist (Part 2)",
+    bible: "Matthew 3, 14",
+    description: "Chris is confused about his purpose in life.",
+  },
+  {
+    episode: 22,
+    season: 2,
+    title: "Paul and Silas",
+    bible: "Acts 16",
+    description:
+      "Chris is angry about being treated unfairly. Superbook takes him to meet Paul and Silas in prison.",
+  },
+  {
+    episode: 23,
+    season: 2,
+    title: "Nehemiah",
+    bible: "Nehemiah 1-6",
+    description:
+      "Chris is overwhelmed by a big project. Superbook takes him to meet Nehemiah.",
+  },
+  {
+    episode: 24,
+    season: 2,
+    title: "Elijah and the Prophets of Baal",
+    bible: "1 Kings 17-18",
+    description:
+      "Chris is afraid to stand alone for God. Superbook takes him to meet Elijah.",
+  },
+  {
+    episode: 25,
+    season: 2,
+    title: "King Solomon",
+    bible: "1 Kings 3-10",
+    description:
+      "Chris must make a difficult decision. Superbook takes him to meet Solomon.",
+  },
+  {
+    episode: 26,
+    season: 2,
+    title: "Samuel and the Call of God",
+    bible: "1 Samuel 1-3",
+    description: "Chris is unsure about God's calling on his life.",
+  },
+
+  // Season 3 (2014-2015) - 13 Episodes
+  {
+    episode: 27,
+    season: 3,
+    title: "Jonah",
+    bible: "Jonah 1-4",
+    description:
+      "Chris is angry when a boy who bullied him becomes a Christian.",
+  },
+  {
+    episode: 28,
+    season: 3,
+    title: "Joseph and His Brothers",
+    bible: "Genesis 37, 45",
+    description:
+      "Chris struggles with forgiving his brother who broke his toy.",
+  },
+  {
+    episode: 29,
+    season: 3,
+    title: "The Good Samaritan",
+    bible: "Luke 10",
+    description:
+      "Chris is annoyed by a persistent neighbor. Superbook takes him to meet the Good Samaritan.",
+  },
+  {
+    episode: 30,
+    season: 3,
+    title: "Baptized!",
+    bible: "Matthew 3, 28",
+    description:
+      "Chris is nervous about getting baptized. Superbook takes him to see Jesus' baptism.",
+  },
+  {
+    episode: 31,
+    season: 3,
+    title: "Zacchaeus",
+    bible: "Luke 19",
+    description:
+      "Chris looks down on a new kid at school. Superbook takes him to meet Zacchaeus.",
+  },
+  {
+    episode: 32,
+    season: 3,
+    title: "The Prodigal Son",
+    bible: "Luke 15",
+    description:
+      "Chris is angry when his father welcomes back his rebellious brother.",
+  },
+  {
+    episode: 33,
+    season: 3,
+    title: "Noah and the Ark",
+    bible: "Genesis 6-9",
+    description:
+      "Chris is mocked for his faith. Superbook takes him to meet Noah.",
+  },
+  {
+    episode: 34,
+    season: 3,
+    title: "Gideon",
+    bible: "Judges 6-8",
+    description:
+      "Chris feels inadequate for a big task. Superbook takes him to meet Gideon.",
+  },
+  {
+    episode: 35,
+    season: 3,
+    title: "Lazarus",
+    bible: "John 11",
+    description: "Chris is devastated when his grandfather dies.",
+  },
+  {
+    episode: 36,
+    season: 3,
+    title: "The Good Shepherd",
+    bible: "John 10, Psalm 23",
+    description:
+      "Chris loses his way spiritually. Superbook takes him to meet the Good Shepherd.",
+  },
+  {
+    episode: 37,
+    season: 3,
+    title: "Sermon on the Mount",
+    bible: "Matthew 5-7",
+    description:
+      "Chris is tempted to take revenge. Superbook takes him to hear the Sermon on the Mount.",
+  },
+  {
+    episode: 38,
+    season: 3,
+    title: "Isaiah",
+    bible: "Isaiah 6, 53",
+    description:
+      "Chris is afraid to share his faith. Superbook takes him to meet Isaiah.",
+  },
+  {
+    episode: 39,
+    season: 3,
+    title: "Peter's Denial",
+    bible: "Matthew 26, John 21",
+    description:
+      "Chris fails a test and feels like a failure. Superbook takes him to meet Peter.",
+  },
+
+  // Season 4 (2016-2017) - 13 Episodes
+  {
+    episode: 40,
+    season: 4,
+    title: "Tower of Babel and the Day of Pentecost",
+    bible: "Genesis 11, Acts 2",
+    description:
+      "Chris is confused by different languages. Superbook takes him to see the Tower of Babel and Pentecost.",
+  },
+  {
+    episode: 41,
+    season: 4,
+    title: "The Birth of John the Baptist",
+    bible: "Luke 1",
+    description:
+      "Chris doubts God's promises. Superbook takes him to see the birth of John the Baptist.",
+  },
+  {
+    episode: 42,
+    season: 4,
+    title: "Isaac and Rebekah",
+    bible: "Genesis 24",
+    description:
+      "Chris is impatient for God's plan. Superbook takes him to meet Isaac and Rebekah.",
+  },
+  {
+    episode: 43,
+    season: 4,
+    title: "Naaman and Elisha",
+    bible: "2 Kings 5",
+    description:
+      "Chris is too proud to accept help. Superbook takes him to meet Naaman.",
+  },
+  {
+    episode: 44,
+    season: 4,
+    title: "Samson and Delilah",
+    bible: "Judges 13-16",
+    description: "Chris is tempted to compromise his values for popularity.",
+  },
+  {
+    episode: 45,
+    season: 4,
+    title: "Elisha and the Syrians",
+    bible: "2 Kings 6",
+    description:
+      "Chris is afraid of his enemies. Superbook takes him to see Elisha and the Syrian army.",
+  },
+  {
+    episode: 46,
+    season: 4,
+    title: "The Blind Beggar",
+    bible: "Luke 18",
+    description:
+      "Chris ignores a homeless person. Superbook takes him to meet a blind beggar.",
+  },
+  {
+    episode: 47,
+    season: 4,
+    title: "Stephen",
+    bible: "Acts 6-7",
+    description:
+      "Chris is afraid to speak the truth. Superbook takes him to meet Stephen.",
+  },
+  {
+    episode: 48,
+    season: 4,
+    title: "Jesus Feeds the Hungry",
+    bible: "Matthew 14, John 6",
+    description:
+      "Chris thinks his small contribution won't matter. Superbook shows him Jesus feeding the 5,000.",
+  },
+  {
+    episode: 49,
+    season: 4,
+    title: "The Woman at the Well",
+    bible: "John 4",
+    description:
+      "Chris judges someone by their past. Superbook takes him to meet the woman at the well.",
+  },
+  {
+    episode: 50,
+    season: 4,
+    title: "Lazarus",
+    bible: "John 11",
+    description:
+      "Chris is devastated when his grandfather dies. Superbook shows him Jesus raising Lazarus.",
+  },
+  {
+    episode: 51,
+    season: 4,
+    title: "Elijah and the Widow",
+    bible: "1 Kings 17",
+    description:
+      "Chris thinks he has nothing to give. Superbook takes him to meet Elijah and the widow.",
+  },
+  {
+    episode: 52,
+    season: 4,
+    title: "Teach Us to Pray",
+    bible: "Luke 11",
+    description:
+      "Chris doesn't know how to pray. Superbook takes him to learn from Jesus.",
+  },
+
+  // Season 5 (2019-2021) - 16 Episodes
+  {
+    episode: 53,
+    season: 5,
+    title: "Jesus Heals the Blind",
+    bible: "John 9",
+    description:
+      "Chris is spiritually blind to his own faults. Superbook takes him to see Jesus heal a blind man.",
+  },
+  {
+    episode: 54,
+    season: 5,
+    title: "Pilate's Decision",
+    bible: "Matthew 27, John 18-19",
+    description:
+      "Chris faces a difficult moral choice. Superbook takes him to see Pilate's decision about Jesus.",
+  },
+  {
+    episode: 55,
+    season: 5,
+    title: "The Promise of a Child",
+    bible: "Genesis 12-21",
+    description:
+      "Chris doubts God's timing. Superbook takes him to meet Abraham and Sarah.",
+  },
+  {
+    episode: 56,
+    season: 5,
+    title: "The Road to Damascus",
+    bible: "Acts 9",
+    description:
+      "Chris persecutes a fellow Christian. Superbook takes him to meet Saul on the road to Damascus.",
+  },
+  {
+    episode: 57,
+    season: 5,
+    title: "Jesus and Zacchaeus",
+    bible: "Luke 19",
+    description:
+      "Chris looks down on someone different. Superbook takes him to meet Zacchaeus.",
+  },
+  {
+    episode: 58,
+    season: 5,
+    title: "The Lord's Prayer",
+    bible: "Matthew 6, Luke 11",
+    description: "Chris learns the meaning behind the Lord's Prayer.",
+  },
+  {
+    episode: 59,
+    season: 5,
+    title: "The Birth of Moses",
+    bible: "Exodus 1-2",
+    description:
+      "Chris feels insignificant. Superbook takes him to see the birth of Moses.",
+  },
+  {
+    episode: 60,
+    season: 5,
+    title: "The Burning Bush",
+    bible: "Exodus 3-4",
+    description:
+      "Chris is afraid to answer God's call. Superbook takes him to see Moses at the burning bush.",
+  },
+  {
+    episode: 61,
+    season: 5,
+    title: "Elijah on Mount Carmel",
+    bible: "1 Kings 18",
+    description:
+      "Chris is afraid to stand alone for God. Superbook takes him to see Elijah on Mount Carmel.",
+  },
+  {
+    episode: 62,
+    season: 5,
+    title: "Nehemiah and the Walls",
+    bible: "Nehemiah 1-6",
+    description:
+      "Chris is overwhelmed by opposition. Superbook takes him to meet Nehemiah rebuilding the walls.",
+  },
+  {
+    episode: 63,
+    season: 5,
+    title: "The Good Shepherd",
+    bible: "John 10",
+    description:
+      "Chris feels lost and alone. Superbook takes him to meet the Good Shepherd.",
+  },
+  {
+    episode: 64,
+    season: 5,
+    title: "Jesus and the Children",
+    bible: "Matthew 19, Mark 10",
+    description:
+      "Chris thinks he's too young to serve God. Superbook shows him Jesus blessing the children.",
+  },
+  {
+    episode: 65,
+    season: 5,
+    title: "Paul and the Unknown God",
+    bible: "Acts 17",
+    description:
+      "Chris is afraid to share his faith with intellectuals. Superbook takes him to see Paul in Athens.",
+  },
+  {
+    episode: 66,
+    season: 5,
+    title: "The Sermon on the Mount",
+    bible: "Matthew 5-7",
+    description: "Chris learns what it means to be a true follower of Jesus.",
+  },
+  {
+    episode: 67,
+    season: 5,
+    title: "The Transfiguration",
+    bible: "Matthew 17, Mark 9",
+    description:
+      "Chris wants to stay on the mountain top. Superbook shows him the Transfiguration.",
+  },
+  {
+    episode: 68,
+    season: 5,
+    title: "Paul's Final Journey",
+    bible: "Acts 20-28",
+    description:
+      "Chris faces trials and persecution. Superbook takes him on Paul's final journey to Rome.",
+  },
+];
+
+// Superbook YouTube Links (Episode-specific)
+const SUPERBOOK_YOUTUBE_LINKS = {
+  // Season 1 (Episodes 1-13)
+  1: "https://www.youtube.com/watch?v=4dzjD5FxJPg",
+  2: "https://www.youtube.com/watch?v=xAFMg09bido",
+  3: "https://www.youtube.com/watch?v=WVjgJhk6yAw",
+  4: "https://www.youtube.com/watch?v=Nt4kCgt_Kj4",
+  5: "https://www.youtube.com/watch?v=V6QYoWEmXLI",
+  6: "https://www.youtube.com/watch?v=CD_qBFYyWK8",
+  7: "https://www.youtube.com/watch?v=LDtncPpQ61w",
+  8: "https://www.youtube.com/watch?v=Ty3vrOoWtNM",
+  9: "https://www.youtube.com/watch?v=EQXyhM592RU",
+  10: "https://www.youtube.com/watch?v=0o8NQBuneJM",
+  11: "https://www.youtube.com/watch?v=ABF-jqfX6ek&list=PL0zvCDP_0LjCpNejEZmCRhf5sG8heMtS2&index=11",
+  12: "https://www.youtube.com/watch?v=xxnRRtn2-Bg",
+  13: "https://www.youtube.com/watch?v=vKiOtqqp-OY",
+
+  // Season 2 (Episodes 14-26)
+  14: "https://www.youtube.com/watch?v=81Akp9gxKEA&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7",
+  15: "https://www.youtube.com/watch?v=rwNz81tgnl4&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=2",
+  16: "https://www.youtube.com/watch?v=EmWHcDUHFXw&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=3",
+  17: "https://www.youtube.com/watch?v=bEqz34vLcgY&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=4",
+  18: "https://www.youtube.com/watch?v=dX3Et-GZr_Q&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=5",
+  19: "https://www.youtube.com/watch?v=9R0FQgGei4c&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=6",
+  20: "https://www.youtube.com/watch?v=voCbE9r5Ms4&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=7",
+  21: "https://www.youtube.com/watch?v=fB-8SIEv1yI&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=8",
+  22: "https://www.youtube.com/watch?v=83-JGTJAXCI&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=9",
+  23: "https://www.youtube.com/watch?v=wTglXGJ0xxo&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=10",
+  24: "https://www.youtube.com/watch?v=9H6j-HsV8jk&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=11",
+  25: "https://www.youtube.com/watch?v=kZkrWQqfDw4&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=12",
+  26: "https://www.youtube.com/watch?v=kF9h7hFngYM&list=PLxU_EVvBhRmxoPrce-K6TVv8mYwcligT7&index=13",
+
+  // Season 3 (Episodes 27-39)
+  27: "https://www.youtube.com/watch?v=jLhVTd-6oE4&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL",
+  28: "https://www.youtube.com/watch?v=zYzkDbZcpwM&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=2",
+  29: "https://www.youtube.com/watch?v=uIJIDLe5VAg&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=3",
+  30: "https://www.youtube.com/watch?v=KVI2FeJ2JuI&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=4",
+  31: "https://www.youtube.com/watch?v=6OiPGISJtDE&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=5",
+  32: "https://www.youtube.com/watch?v=dMoekXiJw_A&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=6",
+  33: "https://www.youtube.com/watch?v=Jp0bSkNQhJ0&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=7",
+  34: "https://www.youtube.com/watch?v=S5Y0P6Mpbqo&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=8",
+  35: "https://www.youtube.com/watch?v=53Gd-5x6xFM&list=PLxU_EVvBhRmwwY8pMyNpsw7d23oBvG7gL&index=9",
+  36: "https://www.youtube.com/watch?v=0BWP8bzC4-M",
+  37: "https://www.youtube.com/watch?v=HMmKkaBswos",
+  38: "https://www.youtube.com/watch?v=uxI5oiKk1Qk",
+  39: "https://www.youtube.com/watch?v=DxClIss5Wao",
+
+  // Season 4 (Episodes 40-52)
+  40: "https://www.youtube.com/playlist?list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN",
+  41: "https://www.youtube.com/watch?v=NDpBETcU1Ck&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=2",
+  42: "https://www.youtube.com/watch?v=xWqcpe2Uy3w&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=3",
+  43: "https://www.youtube.com/watch?v=gQn78JbU7iE&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=4",
+  44: "https://www.youtube.com/watch?v=4Z3Y3-LEwa4&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=5",
+  45: "https://www.youtube.com/watch?v=3QcMBobshjw&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=6",
+  46: "https://www.youtube.com/watch?v=hiDusMcbS_Q&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=7",
+  47: "https://www.youtube.com/watch?v=CO57CwpRhi4&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=8",
+  48: "https://www.youtube.com/watch?v=-43SQ3vyd2g&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=9",
+  49: "https://www.youtube.com/watch?v=AC6xVsa8Hx4&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=10",
+  50: "https://www.youtube.com/watch?v=xn24_31x0Ik&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=11",
+  51: "https://www.youtube.com/watch?v=Is2HgdiZeD4&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=12",
+  52: "https://www.youtube.com/watch?v=PC6Ns47LCGw&list=PLUe_J434VSm8Ccb3kDnF2AKZrdSPGfFNN&index=13",
+
+  // Season 5 (Episodes 53-68)
+  53: "https://www.youtube.com/watch?v=ftUuAQzoCaw&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy",
+  54: "https://www.youtube.com/watch?v=cOu2I2X0JBA&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=2",
+  55: "https://www.youtube.com/watch?v=Tp4uR0EDad0&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=3",
+  56: "https://www.youtube.com/watch?v=XViHRh8gJHc&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=4",
+  57: "Not Found",
+  58: "https://www.youtube.com/watch?v=imeBglxa0b8&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=5",
+  59: "https://www.youtube.com/watch?v=Tz2PAzM5yiQ&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=6",
+  60: "https://www.youtube.com/watch?v=ZBLRuPYcXXk&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=7",
+  61: "https://www.youtube.com/watch?v=RJWrxqS70eI&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=8",
+  62: "https://www.youtube.com/watch?v=hyCl8JIlF6I&list=PLYjRMdykfk83ZaLdar3xVRwXVUQ9Y0ydy&index=9",
+  63: "https://www.youtube.com/watch?v=VrEjzWkOsxE",
+  64: "Not Found",
+  65: "https://www.youtube.com/watch?v=IlScJhsRFC8",
+  66: "Not Found",
+  67: "https://www.youtube.com/watch?v=rZFJBIcV_pY&t=5s",
+  68: "Not Found",
+};
+
 const VOTD_POOL = [
   { ref: "John 3:16", book: "John", chap: 3, verse: 16 },
   { ref: "Psalm 23:1", book: "Psalms", chap: 23, verse: 1 },
@@ -274,6 +904,7 @@ let state = {
   isPlayingExplanation: false,
   selectedBookData: null,
   isAutoReading: false,
+  superbookFilter: "all",
 };
 
 let history = JSON.parse(localStorage.getItem("selah_history")) || [];
@@ -399,20 +1030,20 @@ function generateExpandedExplanation(book, chap, v, verseText) {
   }
 
   const html = `
-        <div class="space-y-3 sm:space-y-4">
-            <div class="insight-header">
-                <h3 class="insight-title">
-                    <i class="fas fa-robot"></i> AI Explanation
-                </h3>
-            </div>
-            <div class="explanation-text">
-                <span class="verse-reference" onclick="jumpToVerse('v-${v}')">${book} ${chap}:${v}</span> states, "${explanationData.verseText}" ${explanationData.explanation}
-            </div>
-            <div class="insight-footer">
-                <i class="fas fa-info-circle"></i>
-                <span>Generated insight based on biblical context</span>
-            </div>
-        </div>`;
+                <div class="space-y-3 sm:space-y-4">
+                    <div class="insight-header">
+                        <h3 class="insight-title">
+                            <i class="fas fa-robot"></i> AI Explanation
+                        </h3>
+                    </div>
+                    <div class="explanation-text">
+                        <span class="verse-reference" onclick="jumpToVerse('v-${v}')">${book} ${chap}:${v}</span> states, "${explanationData.verseText}" ${explanationData.explanation}
+                    </div>
+                    <div class="insight-footer">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Generated insight based on biblical context</span>
+                    </div>
+                </div>`;
 
   return { html };
 }
@@ -677,6 +1308,7 @@ function selectBook(book, maxChapters) {
   state.selectedBookData = getBookData(book);
 
   document.getElementById("libraryView").classList.add("hidden");
+  document.getElementById("superbookView").classList.add("hidden");
   document.getElementById("selectionView").classList.remove("hidden");
   document.getElementById("selectionFlow").classList.remove("hidden");
   document.getElementById("step1").classList.add("active");
@@ -709,11 +1341,11 @@ function selectBook(book, maxChapters) {
   grid.innerHTML = "";
   for (let i = 1; i <= maxChapters; i++) {
     grid.innerHTML += `
-            <button onclick="selectChapter(${i})" 
-                class="glass-card p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-indigo-500 hover:text-white transition-all font-bold text-sm sm:text-base relative group overflow-hidden">
-                <span class="relative z-10">${i}</span>
-                <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/0 to-indigo-500/0 group-hover:from-indigo-500/20 group-hover:to-indigo-500/40 transition-all"></div>
-            </button>`;
+                    <button onclick="selectChapter(${i})" 
+                        class="glass-card p-3 sm:p-4 rounded-lg sm:rounded-xl hover:bg-indigo-500 hover:text-white transition-all font-bold text-sm sm:text-base relative group overflow-hidden">
+                        <span class="relative z-10">${i}</span>
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/0 to-indigo-500/0 group-hover:from-indigo-500/20 group-hover:to-indigo-500/40 transition-all"></div>
+                    </button>`;
   }
 }
 
@@ -764,15 +1396,15 @@ function createProgressRing(percentage, size = 32) {
   const offset = circumference - (percentage / 100) * circumference;
 
   return `
-        <div class="progress-ring-container" style="width: ${size}px; height: ${size}px;">
-            <svg class="progress-ring-svg" viewBox="0 0 ${size} ${size}">
-                <circle class="progress-ring-bg" cx="${size / 2}" cy="${size / 2}" r="${radius}"></circle>
-                <circle class="progress-ring-fill" cx="${size / 2}" cy="${size / 2}" r="${radius}" 
-                    stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"></circle>
-            </svg>
-            <span class="progress-text">${percentage}%</span>
-        </div>
-    `;
+                <div class="progress-ring-container" style="width: ${size}px; height: ${size}px;">
+                    <svg class="progress-ring-svg" viewBox="0 0 ${size} ${size}">
+                        <circle class="progress-ring-bg" cx="${size / 2}" cy="${size / 2}" r="${radius}"></circle>
+                        <circle class="progress-ring-fill" cx="${size / 2}" cy="${size / 2}" r="${radius}" 
+                            stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"></circle>
+                    </svg>
+                    <span class="progress-text">${percentage}%</span>
+                </div>
+            `;
 }
 
 function renderReadingProgress() {
@@ -795,15 +1427,15 @@ function renderReadingProgress() {
   grid.innerHTML = booksWithProgress
     .map(
       ({ name, currentChapter, maxChapters, percentage }) => `
-        <div class="glass-card history-card progress-card select-none">
-            ${createProgressRing(percentage, window.innerWidth < 640 ? 32 : 40)}
-            <div class="history-card-content">
-                <div class="history-book-name text-slate-700 dark:text-slate-300">${name}</div>
-                <div class="history-chapter-info text-slate-500">Chapter ${currentChapter} of ${maxChapters}</div>
-                <div class="history-progress-detail text-slate-400">${percentage}% complete</div>
-            </div>
-        </div>
-    `,
+                <div class="glass-card history-card progress-card select-none">
+                    ${createProgressRing(percentage, window.innerWidth < 640 ? 32 : 40)}
+                    <div class="history-card-content">
+                        <div class="history-book-name text-slate-700 dark:text-slate-300">${name}</div>
+                        <div class="history-chapter-info text-slate-500">Chapter ${currentChapter} of ${maxChapters}</div>
+                        <div class="history-progress-detail text-slate-400">${percentage}% complete</div>
+                    </div>
+                </div>
+            `,
     )
     .join("");
 }
@@ -823,19 +1455,19 @@ function renderHistory() {
       const timeAgo = getTimeAgo(h.timestamp);
 
       return `
-            <button onclick="loadHistory('${h.book}', ${h.chapter})" class="glass-card continue-card hover:bg-indigo-500 hover:text-white transition-all group snap-center cursor-pointer">
-                <div class="continue-icon group-hover:bg-white/20 bg-gradient-to-br from-indigo-500 to-purple-600">
-                    <div class="w-full h-full flex items-center justify-center text-white font-bold text-sm">
-                        ${h.book.charAt(0)}
-                    </div>
-                </div>
-                <div class="continue-content">
-                    <div class="continue-book">${h.book}</div>
-                    <div class="continue-chapter">Chapter ${h.chapter}</div>
-                    <div class="continue-time">${timeAgo}</div>
-                </div>
-            </button>
-        `;
+                    <button onclick="loadHistory('${h.book}', ${h.chapter})" class="glass-card continue-card hover:bg-indigo-500 hover:text-white transition-all group snap-center cursor-pointer">
+                        <div class="continue-icon group-hover:bg-white/20 bg-gradient-to-br from-indigo-500 to-purple-600">
+                            <div class="w-full h-full flex items-center justify-center text-white font-bold text-sm">
+                                ${h.book.charAt(0)}
+                            </div>
+                        </div>
+                        <div class="continue-content">
+                            <div class="continue-book">${h.book}</div>
+                            <div class="continue-chapter">Chapter ${h.chapter}</div>
+                            <div class="continue-time">${timeAgo}</div>
+                        </div>
+                    </button>
+                `;
     })
     .join("");
 }
@@ -894,6 +1526,7 @@ async function fetchChapter(continueAutoRead = false) {
 // FIXED: Update button text when rendering reader - hide restart/stop initially
 function renderReader() {
   document.getElementById("libraryView").classList.add("hidden");
+  document.getElementById("superbookView").classList.add("hidden");
   document.getElementById("selectionView").classList.add("hidden");
   document.getElementById("selectionFlow").classList.add("hidden");
   document.getElementById("readerView").classList.remove("hidden");
@@ -933,20 +1566,20 @@ function renderReader() {
     verseEl.className =
       "verse-container group hover:bg-white/50 dark:hover:bg-slate-800/50 transition-all";
     verseEl.innerHTML = `
-            <div class="flex gap-3 sm:gap-4">
-                <span class="text-indigo-500 font-bold text-base sm:text-lg select-none flex-shrink-0 w-6 sm:w-8">${v.verse}</span>
-                <p class="text-base sm:text-lg leading-relaxed text-slate-800 dark:text-slate-200">${v.text}</p>
-            </div>
-            <div class="mt-3 sm:mt-4 flex gap-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity">
-                <button onclick="speakVerse(${v.verse})" class="text-xs bg-indigo-500/10 text-indigo-500 px-2.5 sm:px-3 py-1.5 rounded-lg hover:bg-indigo-500 hover:text-white transition-all flex items-center gap-1.5 sm:gap-2">
-                    <i class="fas fa-volume-up"></i> <span class="hidden sm:inline">Read</span>
-                </button>
-                <button onclick="toggleInsight('insight-${v.verse}', '${state.book}', ${state.chapter}, ${v.verse})" class="text-xs bg-amber-500/10 text-amber-600 px-2.5 sm:px-3 py-1.5 rounded-lg hover:bg-amber-500 hover:text-white transition-all flex items-center gap-1.5 sm:gap-2">
-                    <i class="fas fa-lightbulb"></i> <span class="hidden sm:inline">Explain</span>
-                </button>
-            </div>
-            <div id="insight-${v.verse}" class="insight-panel mt-2"></div>
-        `;
+                    <div class="flex gap-3 sm:gap-4">
+                        <span class="text-indigo-500 font-bold text-base sm:text-lg select-none flex-shrink-0 w-6 sm:w-8">${v.verse}</span>
+                        <p class="text-base sm:text-lg leading-relaxed text-slate-800 dark:text-slate-200">${v.text}</p>
+                    </div>
+                    <div class="mt-3 sm:mt-4 flex gap-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity">
+                        <button onclick="speakVerse(${v.verse})" class="text-xs bg-indigo-500/10 text-indigo-500 px-2.5 sm:px-3 py-1.5 rounded-lg hover:bg-indigo-500 hover:text-white transition-all flex items-center gap-1.5 sm:gap-2">
+                            <i class="fas fa-volume-up"></i> <span class="hidden sm:inline">Read</span>
+                        </button>
+                        <button onclick="toggleInsight('insight-${v.verse}', '${state.book}', ${state.chapter}, ${v.verse})" class="text-xs bg-amber-500/10 text-amber-600 px-2.5 sm:px-3 py-1.5 rounded-lg hover:bg-amber-500 hover:text-white transition-all flex items-center gap-1.5 sm:gap-2">
+                            <i class="fas fa-lightbulb"></i> <span class="hidden sm:inline">Explain</span>
+                        </button>
+                    </div>
+                    <div id="insight-${v.verse}" class="insight-panel mt-2"></div>
+                `;
     verseList.appendChild(verseEl);
   });
 
@@ -1029,28 +1662,28 @@ function createBookCard(name, chapters, theme, tagline, coverUrl) {
   const uniqueId = "img-" + name.replace(/\s+/g, "-").toLowerCase();
 
   return `
-        <div class="book-cover-container group" onclick="openCoverModal('${name}', ${chapters})">
-            <div class="book-initial">${name.charAt(0)}</div>
-            ${
-              coverUrl
-                ? `<img id="${uniqueId}" 
-                      data-src="${coverUrl}" 
-                      alt="${name}" 
-                      class="book-cover-art" 
-                      width="400" 
-                      height="600"
-                      loading="lazy"
-                      decoding="async">`
-                : ""
-            }
-            <div class="book-spine"></div>
-            <span class="book-cover-badge">${theme}</span>
-            <div class="book-cover-overlay">
-                <h3 class="book-cover-title display-font">${name}</h3>
-                <p class="book-cover-chapters">${chapters} chapters</p>
-            </div>
-        </div>
-    `;
+                <div class="book-cover-container group" onclick="openCoverModal('${name}', ${chapters})">
+                    <div class="book-initial">${name.charAt(0)}</div>
+                    ${
+                      coverUrl
+                        ? `<img id="${uniqueId}" 
+                              data-src="${coverUrl}" 
+                              alt="${name}" 
+                              class="book-cover-art" 
+                              width="400" 
+                              height="600"
+                              loading="lazy"
+                              decoding="async">`
+                        : ""
+                    }
+                    <div class="book-spine"></div>
+                    <span class="book-cover-badge">${theme}</span>
+                    <div class="book-cover-overlay">
+                        <h3 class="book-cover-title display-font">${name}</h3>
+                        <p class="book-cover-chapters">${chapters} chapters</p>
+                    </div>
+                </div>
+            `;
 }
 
 function lazyLoadImages() {
@@ -1085,6 +1718,143 @@ function lazyLoadImages() {
   images.forEach((img) => imageObserver.observe(img));
 }
 
+// Superbook Functions
+function renderSuperbookPreview() {
+  const preview = document.getElementById("superbookPreview");
+  const previewEpisodes = SUPERBOOK_EPISODES.slice(0, 6); // Show first 6 on home
+
+  preview.innerHTML = previewEpisodes
+    .map((ep) => createSuperbookCard(ep))
+    .join("");
+
+  // Lazy load images
+  setTimeout(() => lazyLoadSuperbookImages(), 100);
+}
+
+function renderSuperbookFull() {
+  const grid = document.getElementById("superbookFullGrid");
+  const filtered =
+    state.superbookFilter === "all"
+      ? SUPERBOOK_EPISODES
+      : SUPERBOOK_EPISODES.filter((ep) => ep.season === state.superbookFilter);
+
+  grid.innerHTML = filtered.map((ep) => createSuperbookCard(ep)).join("");
+  lazyLoadSuperbookImages();
+}
+
+function createSuperbookCard(ep) {
+  const thumbUrl = `https://picsum.photos/seed/superbook_s${ep.season}_ep${ep.episode}/400/225`;
+
+  return `
+                <div class="superbook-card" onclick="openSuperbookModal(${ep.episode})">
+                    <img src="${thumbUrl}" 
+                         alt="${ep.title}" 
+                         class="superbook-thumbnail"
+                         loading="lazy"
+                         onload="this.classList.add('loaded')"
+                         onerror="this.style.display='none'">
+                    <div class="superbook-number">${ep.episode}</div>
+                    <span class="superbook-season">S${ep.season}</span>
+                    <div class="superbook-content">
+                        <h3 class="superbook-title">${ep.title}</h3>
+                        <p class="superbook-bible"><i class="fas fa-book-open mr-1"></i>${ep.bible}</p>
+                    </div>
+                </div>
+            `;
+}
+
+function lazyLoadSuperbookImages() {
+  const images = document.querySelectorAll(".superbook-thumbnail:not(.loaded)");
+  images.forEach((img) => {
+    if (img.complete && img.naturalHeight !== 0) {
+      img.classList.add("loaded");
+    }
+  });
+}
+
+function openSuperbookModal(episodeNum) {
+  const ep = SUPERBOOK_EPISODES.find((e) => e.episode === episodeNum);
+  if (!ep) return;
+
+  const modal = document.getElementById("superbookModal");
+
+  document.getElementById("superbookModalNumber").textContent = ep.episode;
+  document.getElementById("superbookModalSeason").textContent =
+    `Season ${ep.season}`;
+  document.getElementById("superbookModalTitle").textContent = ep.title;
+  document.getElementById("superbookModalBible").textContent =
+    `Bible Story: ${ep.bible}`;
+  document.getElementById("superbookModalDescription").textContent =
+    ep.description;
+
+  const thumbUrl = `https://picsum.photos/seed/superbook_s${ep.season}_ep${ep.episode}/600/338`;
+  document.getElementById("superbookModalImage").src = thumbUrl;
+
+  // Get specific YouTube link for this episode
+  const youtubeLink = SUPERBOOK_YOUTUBE_LINKS[episodeNum];
+  const watchBtn = document.getElementById("superbookWatchBtn");
+
+  if (youtubeLink && youtubeLink !== "Not Found") {
+    watchBtn.href = youtubeLink;
+    watchBtn.innerHTML = `
+                    <i class="fas fa-play-circle"></i>
+                    Watch Episode on YouTube
+                `;
+    watchBtn.classList.remove("opacity-50", "cursor-not-allowed");
+    watchBtn.onclick = null;
+  } else {
+    watchBtn.href = "#";
+    watchBtn.innerHTML = `
+                    <i class="fas fa-unlink"></i>
+                    Not Found
+                `;
+    watchBtn.classList.add("opacity-50", "cursor-not-allowed");
+    watchBtn.onclick = (e) => {
+      e.preventDefault();
+      showToast("This episode link is not available");
+    };
+  }
+
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeSuperbookModal(event) {
+  if (
+    event &&
+    event.target !== event.currentTarget &&
+    !event.target.closest(".superbook-modal-close")
+  )
+    return;
+  const modal = document.getElementById("superbookModal");
+  modal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+function showSuperbookSection() {
+  stopAudio();
+  document.getElementById("libraryView").classList.add("hidden");
+  document.getElementById("readerView").classList.add("hidden");
+  document.getElementById("selectionView").classList.add("hidden");
+  document.getElementById("superbookView").classList.remove("hidden");
+  document.getElementById("progressContainer").classList.add("hidden");
+
+  renderSuperbookFull();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function filterSuperbookSeason(season) {
+  state.superbookFilter = season;
+
+  // Update tabs
+  document.querySelectorAll(".superbook-tab").forEach((tab) => {
+    tab.classList.remove("active");
+  });
+  event.target.classList.add("active");
+
+  renderSuperbookFull();
+}
+
 async function fetchVOTD() {
   const daily = getDailyVerseRef();
   state.currentVOTD = daily;
@@ -1117,6 +1887,7 @@ function resetToLibrary() {
 
   document.getElementById("readerView").classList.add("hidden");
   document.getElementById("selectionView").classList.add("hidden");
+  document.getElementById("superbookView").classList.add("hidden");
   document.getElementById("selectionFlow").classList.add("hidden");
   document.getElementById("progressContainer").classList.add("hidden");
   document.getElementById("libraryView").classList.remove("hidden");
@@ -1127,6 +1898,7 @@ function resetToLibrary() {
   lazyLoadImages();
   renderReadingProgress();
   renderHistory();
+  renderSuperbookPreview();
 }
 
 function handleSearch(query) {
@@ -1205,6 +1977,7 @@ function init() {
   lazyLoadImages();
   renderHistory();
   renderReadingProgress();
+  renderSuperbookPreview();
   fetchVOTD();
   applyTheme(localStorage.getItem("theme") === "dark");
 
@@ -1233,5 +2006,6 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     closeCoverModal();
     closeAuthorsModal();
+    closeSuperbookModal();
   }
 });
