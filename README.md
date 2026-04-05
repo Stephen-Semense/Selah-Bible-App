@@ -82,6 +82,18 @@ This platform was engineered to bridge the gap between ancient wisdom and modern
 * **Adaptive Mobile Optimization**: Built with a "mobile-first" approach, menus are designed for thumb-navigation and font sizes ensure maximum legibility on smartphones.
 ---
 
+## 📺 SuperBook Integration (Visual Bible Experience)
+
+Selah now includes a SuperBook Feature that enhances your study by connecting scripture with animated, story-driven visuals.
+
+Interactive Verse Linking: Certain passages include a SuperBook button. When clicked, it opens a related visual adaptation of the story in an external platform such as YouTube.
+External Viewing (YouTube Support): Videos are launched outside the app to ensure smooth playback, full controls, and uninterrupted viewing.
+Story-Based Learning: Perfect for visual learners, this feature brings biblical narratives to life through engaging animation while staying aligned with the scripture you are reading.
+Seamless Integration: The experience is non-intrusive—watch when you want, then return to your exact reading position without losing progress.
+
+🎬 From reading to watching—Selah bridges scripture and story for deeper understanding.
+---
+
 ## 🛠️ Built With
 * **Tailwind CSS** - For the modern, glass-card interface.
 * **FontAwesome 6** - For intuitive, accessible iconography.
