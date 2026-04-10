@@ -6,7 +6,7 @@
 
 What is “**Selah**”?
 
-**Selah** is a term commonly found in the Book of Psalms in the Bible. While its exact meaning is uncertain, it is widely understood to signal a pause for reflection.
+**Selah** is a term commonly found in the Book of Psalms in the Bible. While its exact meaning is uncertain, it is widely understood to signal a pause for reflection. "**Selah**" is a Hebrew word found primarily in the Psalms (71 times) and Habakkuk (3 times), generally understood to mean a pause, rest, or musical interlude. It acts as a instruction to stop and reflect on the preceding verses, or a musical cue to lift voices or play instruments louder
 
 Common Interpretations
 * **Pause and reflect** – A moment to stop and think about what was just read or said
