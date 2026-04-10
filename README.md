@@ -4,6 +4,24 @@
 
 **Selah** [סֶלָה] is a modern, distraction-free Bible experience designed for deep meditation and structured study. Beyond just reading, Selah now incorporates a **structured insight engine** that breaks down verses into historical, linguistic, and spiritual components—helping you not just read the Word, but master it.
 
+What is “**Selah**”?
+
+**Selah** is a term commonly found in the Book of Psalms in the Bible. While its exact meaning is uncertain, it is widely understood to signal a pause for reflection.
+
+Common Interpretations
+* **Pause and reflect** – A moment to stop and think about what was just read or said
+* **Musical break** – Possibly an instruction for instrumental interlude or silence
+* **Emphasis** – A way to highlight the importance of a passage
+In This Project
+
+“Selah” represents the idea of:
+
+* Taking a step back
+* Reflecting before moving forward
+* Creating space for clarity and intention
+
+It serves as a reminder that not everything is about speed—sometimes, meaning comes from pausing.
+
 ---
 
 ## 🌟 Why Selah? (For the User)
